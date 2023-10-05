@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Channing_Babb_Lab4.shapes.Circle;
+import Channing_Babb_Lab4.shapes.Rectangle;
 import Channing_Babb_Lab4.shapes.ShapeIcon;
 import Channing_Babb_Lab4.shapes.Triangle;
 
@@ -22,7 +23,7 @@ public class Main {
 
      // main
     public static void main(String[] args) {
-        ShapeIcon[] shapes = { new Circle(100, 100), new Circle(300, 300), new Triangle(500, 500) };
+        ShapeIcon[] shapes = { new Rectangle(100, 100), new Circle(300, 300), new Triangle(500, 500) };
         Measurable maxShape = maximum(shapes);
         System.out.println(maxShape.measure() + " is the largest shape.");
         displayShapes(shapes);
