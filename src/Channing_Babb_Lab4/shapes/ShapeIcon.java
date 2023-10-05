@@ -1,4 +1,6 @@
 package Channing_Babb_Lab4.shapes;
+import Channing_Babb_Lab4.Measurable;
+
 import javax.swing.*;
 
 /**

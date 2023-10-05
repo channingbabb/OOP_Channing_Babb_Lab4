@@ -1,4 +1,4 @@
-package Channing_Babb_Lab4.shapes;
+package Channing_Babb_Lab4;
 
 /**
  * Measurable Interface

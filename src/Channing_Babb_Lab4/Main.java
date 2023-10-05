@@ -8,7 +8,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Channing_Babb_Lab4.shapes.Circle;
-import Channing_Babb_Lab4.shapes.Measurable;
 import Channing_Babb_Lab4.shapes.ShapeIcon;
 import Channing_Babb_Lab4.shapes.Triangle;
 
