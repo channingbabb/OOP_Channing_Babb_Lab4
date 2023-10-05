@@ -45,15 +45,16 @@ public class Main {
 
     /**
      * Sorts an array of ShapeIcon objects based on their measurements from measure().
+     * From largest to smallest.
      * @param shapes
      */
     public static void sort(ShapeIcon[] shapes) {
         for (int i = 0; i < shapes.length; i++) {
-            for (int j = 0; j < shapes.length - 1; j++) {
-                if (shapes[j].measure() > shapes[j + 1].measure()) {
-                    ShapeIcon temp = shapes[j];
-                    shapes[j] = shapes[j + 1];
-                    shapes[j + 1] = temp;
+            for (int j = i + 1; j < shapes.length; j++) {
+                if (shapes[i].measure() < shapes[j].measure()) {
+                    ShapeIcon temp = shapes[i];
+                    shapes[i] = shapes[j];
+                    shapes[j] = temp;
                 }
             }
         }
@@ -80,7 +81,7 @@ public class Main {
                 for (ShapeIcon shape : shapes) {
                     shape.paintIcon(this, g, x, y);
                     // if last shape in row, reset x and increment y
-                    if (shape == shapes[shapes.length - 1]) {
+                    if (shape == shapes[0]) {
                         // create jlabel specifying that this is the largest shape
                         JLabel label = new JLabel("Largest Shape");
 
